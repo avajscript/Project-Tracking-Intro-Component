@@ -11,6 +11,11 @@ body {
 
 ul {
   list-style-type: none;
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
 }
 
 .background-grey {
@@ -108,7 +113,12 @@ p {
   display: flex;
 }
 
+.flex {
+  flex: 1;
+}
+
 .flex-right {
+  flex-basis: 50%;
   display: flex;
   flex: 1;
   justify-content: flex-end;
