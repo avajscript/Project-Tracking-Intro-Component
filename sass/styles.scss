@@ -10,6 +10,9 @@ body {
   font-family: Barlow;
   font-size: 16px;
 }
+ul {
+  list-style-type: none;
+}
 
 .background-grey {
   background-color: $light-grey;
@@ -123,5 +126,8 @@ p {
   .flex-container-desktop {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .top-section {
+    right: -15%;
   }
 }

@@ -9,6 +9,10 @@ body {
   font-size: 16px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .background-grey {
   background-color: #eef3f6;
   position: absolute;
@@ -125,5 +129,8 @@ p {
   .flex-container-desktop {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .top-section {
+    right: -15%;
   }
 }
