@@ -112,21 +112,24 @@ p {
 }
 
 .flex-right {
-  flex-basis: 50%;
   display: flex;
   flex: 1;
   justify-content: flex-end;
   align-items: center;
 }
 
-.desktop {
+.flex-desktop {
   display: none;
+}
+
+.float-right {
+  float: right;
 }
 // End of reusable
 
 @media screen and (min-width: 1052px) {
-  .desktop {
-    display: block;
+  .flex-desktop {
+    display: flex;
   }
   .mobile {
     display: none;
