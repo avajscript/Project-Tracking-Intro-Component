@@ -51,6 +51,7 @@ p {
 .navbar {
   position: relative;
   padding: 3rem 2rem;
+
   li {
     margin-left: 3rem;
     &:hover {
@@ -121,6 +122,9 @@ p {
   .center {
     width: 60%;
   }
+  h1 {
+    max-width: 500px;
+  }
   header {
     h2 {
       display: inline-block;
@@ -130,10 +134,12 @@ p {
         padding: 2px 10px;
         border-radius: 4rem;
         margin-right: 1rem;
+        letter-spacing: 1px;
       }
       &:nth-of-type(2) {
         color: $grey;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
+        font-family: "Barlow";
       }
     }
   }
@@ -154,7 +160,7 @@ p {
   background-color: hsl(0, 100%, 68%);
 
   padding: 10px 20px;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   margin-right: 1.5rem;
   cursor: pointer;
   &:hover {
@@ -172,6 +178,10 @@ p {
 }
 .flex {
   flex: 1;
+}
+.flex-50 {
+  flex: 1;
+  flex-basis: 50%;
 }
 
 .flex-right {
@@ -191,6 +201,20 @@ p {
 // End of reusable
 
 @media screen and (min-width: 1052px) {
+  .navbar {
+    padding: 4rem 10%;
+  }
+  .bottom-section {
+    padding-left: 10%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 3rem;
+    h1 {
+      font-size: 4rem;
+      max-width: 500px;
+      margin-right: 0;
+    }
+  }
   .flex-desktop {
     display: flex;
   }
@@ -203,6 +227,9 @@ p {
     flex-direction: row-reverse;
   }
   .top-section {
-    right: -15%;
+    margin-top: 3rem;
+    img {
+      width: 120%;
+    }
   }
 }
