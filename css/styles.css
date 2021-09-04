@@ -18,6 +18,10 @@ li {
   display: inline-block;
 }
 
+a {
+  text-decoration: none;
+}
+
 .background-grey {
   background-color: #eef3f6;
   position: absolute;
@@ -48,6 +52,23 @@ p {
 
 .navbar {
   padding: 3rem 2rem;
+}
+
+.navbar li {
+  margin-left: 3rem;
+}
+
+.navbar li:hover {
+  text-decoration: underline;
+}
+
+.navbar li:nth-of-type(4) a {
+  color: #a0a1ac;
+}
+
+.navbar a {
+  color: #242942;
+  font-weight: 700;
 }
 
 .navbar-button {
@@ -81,6 +102,7 @@ p {
   background-color: black;
   padding: 2px 10px;
   border-radius: 4rem;
+  margin-right: 1rem;
 }
 
 .bottom-section header h2:nth-of-type(2) {
@@ -102,11 +124,19 @@ p {
   font-weight: 700;
   display: inline-block;
   background-color: #ff5c5c;
-  color: white;
   padding: 10px 20px;
   border-radius: 0.5rem;
   margin-right: 1.5rem;
   cursor: pointer;
+}
+
+.schedule:hover {
+  background-color: #ff7070;
+}
+
+.schedule a {
+  color: white;
+  letter-spacing: 1px;
 }
 
 .flex-container {
