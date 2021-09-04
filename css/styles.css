@@ -51,6 +51,7 @@ p {
 }
 
 .navbar {
+  position: relative;
   padding: 3rem 2rem;
 }
 
@@ -73,6 +74,43 @@ p {
 
 .navbar-button {
   cursor: pointer;
+}
+
+.hide {
+  opacity: 0%;
+}
+
+.nav {
+  position: absolute;
+  top: 115px;
+  width: 90%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 6px #a0a1ac;
+  z-index: 1;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.nav ul {
+  width: 100%;
+}
+
+.nav li {
+  display: block;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.nav li a {
+  font-family: "Barlow Condensed";
+}
+
+.nav li:nth-of-type(4) {
+  border-top: 1px solid #a0a1ac;
+  margin: 0;
+  padding-top: 1rem;
 }
 
 .top-section {
