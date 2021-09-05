@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.main {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Barlow;
   font-size: 16px;
